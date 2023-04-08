@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 1</title>
+	<script src="gabrielmonteiro.js"></script>
+    <link rel="stylesheet" href="gabrielmonteiro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+	
+	  
+
+	  
+    />
+  </head>
+  <body>
+
+	<header>
+		<div class="header-bg"></div>
+		<div class="header-content">
+		  <h1>Bem-vindo ao meu site de turismo</h1>
+		  <p>Explore novos lugares e crie memórias inesquecíveis</p>
+		</div>
+	  </header>
+	  
+	  <main>
+		<!-- Seu conteúdo aqui -->
+	  </main>
+	  
+	  <!-- Script de rolagem suave -->
+	  <script>
+		const scrollLink = document.querySelector('.scroll-link');
+	  
+		scrollLink.addEventListener('click', function(event) {
+		  event.preventDefault();
+	  
+		  const section = document.querySelector(this.hash);
+		  const sectionTop = section.offsetTop;
+	  
+		  window.scrollTo({
+			top: sectionTop,
+			behavior: 'smooth'
+		  });
+		});
+	  </script>
+	  
+	  <!-- Estilo do header -->
+	  <style>
+		header {
+		  position: relative;
+		  height: 100vh;
+		}
+	  
+		.header-bg {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-image: url('url_da_sua_imagem_de_fundo');
+		  background-size: cover;
+		  background-position: center;
+		  filter: brightness(0.5); /* Escurece a imagem para destacar o texto */
+		}
+	  
+		.header-content {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  color: #fff;
+		}
+	  
+		.header-content h1 {
+		  font-size: 3rem;
+		  margin-bottom: 1rem;
+		}
+	  
+		.header-content p {
+		  font-size: 1.5rem;
+		}
+	  
+		/* Estilo do link de scroll */
+		.scroll-link {
+		  position: absolute;
+		  bottom: 20px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  display: inline-block;
+		  width: 50px;
+		  height: 50px;
+		  border: 2px solid #fff;
+		  border-radius: 50%;
+		  text-align: center;
+		  line-height: 50px;
+		  color: #fff;
+		  cursor: pointer;
+		  transition: all 0.3s ease-in-out;
+		}
+	  
+		.scroll-link:hover {
+		  background-color: #fff;
+		  color: #000;
+		}
+	  </style>
+	  
+	
+		<div class="card">
+			<img src="image.jpeg" />
+			<div>
+			  <h2>Invest in Valby's sparkling new construction</h2>
+			  <h3>Type: Residential rental</h3>
+			  <p>
+				Soon you can invest in Sid Harman's new attractive property, set in
+				the heart of Athens.
+			  </p>
+			  <button>Show the property project</button>
+			</div>
+		  </div>
+		  
+		  <div class="card">
+			<img src="image.jpeg" />
+			<div>
+			  <h2>Invest in another property</h2>
+			  <h3>Type: Commercial</h3>
+			  <p>
+				Here is another investment opportunity for you to consider. This commercial property is located in a prime location and has high potential for growth.
+			  </p>
+			  <button>Show the property project</button>
+			</div>
+		  </div>
+	  
+		  <div class="card">
+			  <img src="image.jpeg" />
+			  <div>
+				<h2>Invest in another property</h2>
+				<h3>Type: Commercial</h3>
+				<p>
+				  Here is another investment opportunity for you to consider. This commercial property is located in a prime location and has high potential for growth.
+				</p>
+				<button>Show the property project</button>
+			  </div>
+			</div>
+	  
+			<div class="card">
+			  <img src="image.jpeg" />
+			  <div>
+				<h2>Invest in another property</h2>
+				<h3>Type: Commercial</h3>
+				<p>
+				  Here is another investment opportunity for you to consider. This commercial property is located in a prime location and has high potential for growth.
+				</p>
+				<button>Show the property project</button>
+			  </div>
+			</div>
+	  
+	  
+
+	
+    
+    
+  </body>
+</html>
